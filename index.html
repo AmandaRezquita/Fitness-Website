@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Fitness</title>
+  </head>
+  <body>
+    <div id="navbar-container"></div>
+
+    <script>
+      fetch("/components/navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar-container").innerHTML = data;
+        });
+    </script>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <img src="/assets/images/hero_img.png" alt="" />
+          <div class="hero-text">
+            <h1 class="title">We Dont Just Practice But Calms The Soul</h1>
+            <p class="desc">
+              Lorem ipsum dolor sit amet consectetur. Eu diam nulla netus in
+              maecenas viverra. Fermentum sed amet eget elementum volutpat amet
+              augue.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="benefits">
+        <div class="benefits-content">
+          <ul>
+            <li><h2 class="benefits-text">Beginner Friendly</h2></li>
+            <li><h2 class="benefits-text">Solid Community</h2></li>
+            <li><h2 class="benefits-text">Free Consultation</h2></li>
+            <li><h2 class="benefits-text">Trainer Professional</h2></li>
+          </ul>
+        </div>
+      </section>
+      <section class="about-us">
+        <div class="aboutUs-content">
+          <div class="video">
+            <img src="/assets/images/aboutUsImg.jpg" alt="" />
+            <i class="fa-solid fa-circle-play"></i>
+          </div>
+          <div class="information">
+            <div class="contact">
+              <h1 class="title">Fitness is The Best Solution For You</h1>
+              <p class="desc">
+                Lorem ipsum dolor sit amet consectetur. Eu diam nulla netus in
+                maecenas viverra. Fermentum sed amet eget elementum volutpat
+                amet augue. Lorem ipsum dolor sit amet consectetur. Eu diam
+                nulla netus in maecenas viverra. Fermentum sed amet eget
+                elementum volutpat amet augue.
+              </p>
+              <button class="contactBtn">
+                <p>Contact Now</p>
+              </button>
+            </div>
+            <div class="contactUs">
+              <h3>Contact Us!</h3>
+              <div class="contact-row">
+                <i class="fa-solid fa-envelope"></i>
+                <div class="contact-col">
+                  <h4>Email</h4>
+                  <p>ecotourtravelkarimunjawa@gmail.com</p>
+                </div>
+              </div>
+              <div class="contact-row">
+                <i class="fa-solid fa-phone"></i>
+                <div class="contact-col">
+                  <h4>Phone</h4>
+                  <p>0858-0033-1815</p>
+                </div>
+              </div>
+              <div class="contact-row">
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="contact-col">
+                  <h4>Address</h4>
+                  <p>
+                    Jl. Bukit Kapuran, Karimunjawa, RT 04 RW 01 Jepara, Jawa
+                    Tengah, Indonesia
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="trainer">
+        <div class="trainer-row">
+          <img src="assets/images/trainer_img.jpg" alt="" />
+          <div class="trainer-col">
+            <h1 class="title">Professional Trainer</h1>
+            <p class="desc">
+              Lorem ipsum dolor sit amet consectetur. Eu diam nulla netus in
+              maecenas viverra. Fermentum sed amet eget elementum volutpat amet
+              augue.
+            </p>
+          </div>
+        </div>
+        <div class="trainer-profile">
+          <div class="trainer-profile-row">
+            <div class="trainer-profile-col">
+              <h3 class="name">Cevalline Hyen</h3>
+              <img src="/assets/images/profile1.jpg" alt="" />
+            </div>
+            <div class="trainer-profile-col">
+              <h3 class="name">Step Hanson</h3>
+              <img src="/assets/images/profile2.jpg" alt="" />
+            </div>
+            <div class="trainer-profile-col">
+              <h3 class="name">Angela Traine</h3>
+              <img src="/assets/images/profile3.jpg" alt="" />
+            </div>
+            <div class="trainer-profile-col">
+              <h3 class="name">Robert Bert</h3>
+              <img src="/assets/images/profile4.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="review">
+        <div class="review-col">
+          <h1 class="title">They Are Happy Members</h1>
+          <div class="review-row">
+            <div class="card">
+              <div class="card-col">
+                <div class="card-row">
+                  <img src="assets/images/profile5.jpg" alt="" />
+                  <div class="card-name">
+                    <h1>Phone</h1>
+                    <p>Teacher</p>
+                  </div>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consecasatetur. Natoque sed dui
+                  odio urna lectus enim feugiat justo.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-col">
+                <div class="card-row">
+                  <img src="assets/images/profile5.jpg" alt="" />
+                  <div class="card-name">
+                    <h1>Jessica</h1>
+                    <p>CEO</p>
+                  </div>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consecasatetur. Natoque sed dui
+                  odio urna lectus enim feugiat justo.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-col">
+                <div class="card-row">
+                  <img src="assets/images/profile5.jpg" alt="" />
+                  <div class="card-name">
+                    <h1>Ozzie</h1>
+                    <p>Designer</p>
+                  </div>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consecasatetur. Natoque sed dui
+                  odio urna lectus enim feugiat justo.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="footer-col">
+          <div class="join">
+            <h1>Join Our Member Now!</h1>
+            <button class="contactBtn2"><p>Contact</p></button>
+          </div>
+        </div>
+        <div class="logo-footer">
+          <img src="/assets/images/website_logo.png" alt="website_logo" />
+          <h3>Fitness</h3>
+        </div>
+        <div class="footer-row">
+          <ul class="link-row">
+            <li><a href="">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Trainer</a></li>
+            <li><a href="">Review</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+        <div class="line"></div>
+        <div class="copyright">
+            <i class="fa-regular fa-copyright"></i>
+            <p>2023 Fitnes. All rights reserved.</p>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
